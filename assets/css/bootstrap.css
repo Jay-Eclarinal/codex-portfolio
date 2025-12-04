@@ -7423,6 +7423,10 @@
      background-color: #f8f9fa !important
  }
 
+  .bg-dust {
+      background-color: #DAD2D8 !important
+  }
+
  a.bg-light:focus,
  a.bg-light:hover,
  button.bg-light:focus,

@@ -38,32 +38,17 @@
                         <li class="nav-item" id="index">
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
-                        <li class="nav-item" id="index">
+                        <!-- <li class="nav-item" id="index">
                             <a class="nav-link" href="#footer">Contact Us</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- style="background-image:url('admin/images/carousel/1.jpg')" -->
-        <section class="bg-home" id="home">
-            <div class="bg-overlay"></div>
-            <div class="home-center">
-                <div class="home-desc-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="title-heading text-center mt-5 pt-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        <div id="carousel-container"></div>
         
-        <section class="section pb-0 mt-3" id="aboutus">
+        <section class="section pb-0  bg-dust" id="aboutus">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-6 container">
                     <div class="row justify-content-center">
@@ -103,7 +88,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-6 container bg-light">
+                <div class="col-12 col-sm-6 col-lg-6 container">
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="section-title text-center">
@@ -153,7 +138,7 @@
             </div>
         </section>
 
-        <section class="section" id="profile">
+        <section class="section bg-dust" id="profile">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -190,7 +175,7 @@
             </div>
         </section>
 
-        <section class="section bg-light" id="projects">
+        <section class="section bg-dust" id="projects">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -314,6 +299,13 @@
                 .then(response => response.text())
                 .then(html => {
                     document.getElementById("modal-container").innerHTML = html;
+                });
+        </script>
+        <script>
+            fetch("assets/includes/carousel.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("carousel-container").innerHTML = html;
                 });
         </script>
     </body>

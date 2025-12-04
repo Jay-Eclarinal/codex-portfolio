@@ -238,7 +238,7 @@ p {
 }
 
 .bg-overlay {
-  background-color: rgba(35, 37, 47, 0.8);
+  background-color: #DAD2D8;
   position: absolute;
   top: 0;
   right: 0;
@@ -727,7 +727,7 @@ button:not(:disabled) {
 .nav-sticky.navbar-custom {
   margin-top: 0px;
   padding: 12px 0px;
-  background-color: #ffffff;
+  background-color: #14080E;
   box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
   color: #353535 !important;
 }
@@ -738,7 +738,7 @@ button:not(:disabled) {
   margin-top: 0px;
 }
 .nav-sticky.navbar-custom .navbar-nav li a {
-  color: #2f3545 !important;
+  color: #ffff !important;
 }
 .nav-sticky.navbar-custom .navbar-nav li a:hover, .nav-sticky.navbar-custom .navbar-nav li a:active {
   color: #66efdd !important;
@@ -750,7 +750,7 @@ button:not(:disabled) {
   background-color: #ffffff;
 }
 .nav-sticky .navbar-brand {
-  color: #353535 !important;
+  color: #ffff !important;
 }
 
 .login-button {
