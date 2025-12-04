@@ -1280,6 +1280,20 @@ button:not(:disabled) {
   line-height: 1;
   width: 12.5rem;
 }
+.team-profile {
+  /* This applies the grayscale effect (100% means fully grayscale) */
+  filter: grayscale(100%);
+
+  /* Optional: Add a smooth transition for a nicer effect */
+  transition: filter 0.5s ease;
+}
+
+/* 2. Target the image on hover and remove the filter */
+.team-profile:hover {
+  /* This removes the grayscale filter, restoring original colors */
+  filter: none;
+}
+
 @keyframes noise-anim {
   0% {
     clip: rect(49px, 9999px, 40px, 0);
