@@ -9,6 +9,14 @@ $(window).scroll(function() {
     }
 });
 
+$('.navbar-nav a, .mouse-down').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 0
+    }, 1500, 'easeInOutSine');
+    event.preventDefault();
+});
+
 // Scrollspy
 $("#navbarCollapse").scrollspy({ offset: 70 });
 
